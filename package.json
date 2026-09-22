@@ -1,0 +1,15 @@
+{
+  "name": "jeiser-resume",
+  "version": "1.0.0",
+  "description": "Deterministic 1-page ATS resume compiled with Playwright",
+  "main": "build_pdf.js",
+  "scripts": {
+    "build:pdf": "node build_pdf.js",
+    "test": "node -e \"const fs = require('fs'); console.log('Checking PDFs existence...'); if(!fs.existsSync('CV_Jeiser_Gutierrez_SDET_2026_ES.pdf') || !fs.existsSync('CV_Jeiser_Gutierrez_SDET_2026_EN.pdf')) process.exit(1); console.log('OK');\""
+  },
+  "author": "Jeiser Abraham Gutiérrez Torres <jeiser270997@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
