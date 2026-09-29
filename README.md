@@ -1,54 +1,49 @@
 # Jeiser Gutiérrez — SDET & Agentic Systems Resume
 
-> **HolaMundo Standard**: 1-Page Strict ATS-Friendly Layout · High-Density Architecture · Deterministic Playwright PDF Compilation.
+> **1-Page Strict ATS-Friendly Layout** · High-Density Engineering Content · Deterministic Playwright PDF Compilation.
 
-[![CI](https://img.shields.io/badge/CI-Passing-10b981?style=flat-square)](https://github.com/jeiserlabs/resume)
-[![Tests](https://img.shields.io/badge/Automated_Tests-100%25_Green-3b82f6?style=flat-square)](https://github.com/jeiserlabs/resume)
 [![English](https://img.shields.io/badge/English-C1_Advanced_(EF_SET_68)-047857?style=flat-square)](https://www.efset.org/)
 [![License](https://img.shields.io/badge/License-MIT-gray?style=flat-square)](LICENSE)
 
-This repository contains the source code, automated build pipeline, and compiled PDF releases of my professional curriculum vitae as a **Software Development Engineer in Test (SDET)** and **Agentic Systems Developer**.
+This repository holds the HTML source of my one-page curriculum vitae as a **Software Development Engineer in Test (SDET)** and **Agentic Systems Developer**, together with the Playwright script that compiles it to PDF deterministically.
 
 ---
 
-## 📄 Live Documents
+## 📄 Documents
 
-| Language | PDF Document | Source Code |
+| Language | Download (PDF) | Source (HTML) |
 | :--- | :--- | :--- |
-| **English** | [📥 Download CV (English A4 PDF)](CV_Jeiser_Gutierrez_SDET_2026_EN.pdf) | [`CV_Jeiser_Gutierrez_SDET_2026_EN.html`](CV_Jeiser_Gutierrez_SDET_2026_EN.html) |
-| **Español** | [📥 Descargar CV (Español A4 PDF)](CV_Jeiser_Gutierrez_SDET_2026_ES.pdf) | [`CV_Jeiser_Gutierrez_SDET_2026_ES.html`](CV_Jeiser_Gutierrez_SDET_2026_ES.html) |
+| **English** | [📥 CV — English (A4 PDF)](https://drive.google.com/file/d/1VHty290AM5iA-xtVU-m5o3HN4Z2DI79j/view) | [`CV_Jeiser_Gutierrez_SDET_2026_EN.html`](CV_Jeiser_Gutierrez_SDET_2026_EN.html) |
+| **Español** | [📥 CV — Español (A4 PDF)](https://drive.google.com/file/d/1cWLsTjen2DaFMDIFI93hA2zx9GOWhjp_/view) | [`CV_Jeiser_Gutierrez_SDET_2026_ES.html`](CV_Jeiser_Gutierrez_SDET_2026_ES.html) |
+
+> The compiled PDFs live in Google Drive because this repository is kept **text-only** (no binaries in version control). Run `npm run build:pdf` to regenerate them locally.
 
 ---
 
 ## 🛠️ Architecture & Principles
 
-1. **Strict 1-Page Constraint**: Engineered to fit strictly on a single A4 page (`210mm x 297mm`) without multi-page overflow or clipped elements.
-2. **ATS-First Typography & Structure**: Clean semantic HTML5 elements without multi-column parsing traps that confuse applicant tracking systems.
-3. **Deterministic Headless Rendering**: Compiled via **Playwright** (`printBackground: true`, exact millimeter margins) ensuring 100% visual parity across all platforms.
-4. **Impact Metrics**: Focuses on concrete engineering outcomes (e.g., +800 automated tests green, regression cycles slashed from 4h to &lt;10min, 14 deterministic CI gates).
+1. **Strict 1-Page Constraint**: engineered to fit on a single A4 page (`210mm x 297mm`) with no overflow or clipped content.
+2. **ATS-First Structure**: semantic HTML5 without multi-column parsing traps that confuse applicant tracking systems.
+3. **Deterministic Headless Rendering**: compiled with **Playwright** (`printBackground: true`, exact millimetre margins) for identical output on every machine.
+4. **Impact-First Content**: every bullet quantifies an outcome (automated regression suites, measurable cycle-time reductions) instead of listing duties.
+5. **Text-Only Repository**: generated artifacts (PDF) stay out of version control; only the reproducible sources are stored.
 
 ---
 
-## 🔬 Featured Projects & Repositories
-
-* **[ProGanado / GanadoControl](https://github.com/jeiserlabs/proganado)**: Livestock ERP & biological traceability engine. Strict 3NF relational database (12 tables, 7 indices) with fail-closed triggers and a 10/10 automated Node.js test suite.
-* **[WheelSaver](https://github.com/jeiserlabs/wheelsaver)**: Local SQLite WAL index of 1,000+ top GitHub repositories and integrated **Model Context Protocol (MCP)** server for autonomous AI coding agents.
-
----
-
-## 🚀 Building Locally
+## ✅ Verifying this repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/jeiserlabs/resume.git
-cd resume
-
-# Install dependencies (Playwright)
 npm install
-
-# Compile both PDFs
-npm run build:pdf
+npm test            # verifies both HTML sources exist and keep the A4 page contract
+npm run build:pdf   # compiles both PDFs with Playwright
 ```
+
+---
+
+## 🔬 Featured Projects
+
+* **[ProGanado](https://github.com/jeiserlabs/proganado)**: livestock ERP and biological traceability engine. Strict 3NF relational model (12 tables, 7 indices) with fail-closed triggers and an automated Node.js test suite.
+* **[WheelSaver](https://github.com/jeiserlabs/wheelsaver)**: local SQLite FTS5 index of top GitHub repositories plus an MCP server for autonomous coding agents.
 
 ---
 

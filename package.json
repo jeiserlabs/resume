@@ -5,7 +5,7 @@
   "main": "build_pdf.js",
   "scripts": {
     "build:pdf": "node build_pdf.js",
-    "test": "node -e \"const fs = require('fs'); console.log('Checking PDFs existence...'); if(!fs.existsSync('CV_Jeiser_Gutierrez_SDET_2026_ES.pdf') || !fs.existsSync('CV_Jeiser_Gutierrez_SDET_2026_EN.pdf')) process.exit(1); console.log('OK');\""
+    "test": "node --test"
   },
   "author": "Jeiser Abraham Gutiérrez Torres <jeiser270997@gmail.com>",
   "license": "MIT",
